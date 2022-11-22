@@ -18,9 +18,10 @@ const NoticiasPolitica = () => {
                 <h1>Notícias sobre Política</h1>
             </header>
 
+            <Link to="/home">Retorne Home</Link>
             <Politica id={idPolitica} setIdPolitica={setIdPolitica} />
             <ListaPolitica getIdPolitica={getIdPoliticaHandler} />
-            <Link to="/">Retorne Home</Link>
+
         </>
     );
 }

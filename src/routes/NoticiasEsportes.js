@@ -18,9 +18,10 @@ const NoticiasEsportes = () => {
                 <h1>Notícias sobre Esportes</h1>
             </header>
 
+            <Link to="/home">Retorne Home</Link>
             <Esportes id={idEsportes} setIdEsportes={setIdEsportes} />
             <ListaEsportes getIdEsportes={getIdEsportesHandler} />
-            <Link to="/">Retorne Home</Link>
+
         </>
     );
 }
