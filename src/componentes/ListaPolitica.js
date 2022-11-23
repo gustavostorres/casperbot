@@ -35,12 +35,12 @@ const ListaPolitica = ({ getIdPolitica }) => {
                 {politica.map((doc, index) => {
                     return (
                         <tr key={doc.id}>
-                            <td>{index + 1}</td>
-                            <td>{doc.title}</td>
-                            <td>{doc.subtitle}</td>
-                            <td>{doc.buttonTitle}</td>
-                            <td>{doc.buttonUrl}</td>
-                            <td>{doc.imageUrl}</td>
+                            <td className='break'>{index + 1}</td>
+                            <td className='break'>{doc.title}</td>
+                            <td className='break'>{doc.subtitle}</td>
+                            <td className='break'>{doc.buttonTitle}</td>
+                            <td className='break'>{doc.buttonUrl}</td>
+                            <td className='break'>{doc.imageUrl}</td>
                             <td>
                                 <button
                                     variant="secondary"
