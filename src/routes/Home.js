@@ -9,8 +9,6 @@ const Home = () =>{
     localStorage.clear()
     alert('Seção encerrada com sucesso')
     navigate('/')
-    window.location.reaload(false)
-    
   }
 
   return (
