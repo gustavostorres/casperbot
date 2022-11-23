@@ -46,7 +46,6 @@ const Entretenimento = ({ id, setIdEntretenimento }) => {
     const editHandler = async () => {
         try {
             const docSnap = await EntretenimentoServices.getEntretenimento(id);
-            console.log("the record is :", docSnap.data());
             setTitle(docSnap.data().title);
             setSubtitle(docSnap.data().subtitle);
             setButtonTitle(docSnap.data().buttonTitle);
@@ -58,7 +57,6 @@ const Entretenimento = ({ id, setIdEntretenimento }) => {
     };
 
     useEffect(() => {
-        console.log("ID: ", id);
         if (id !== undefined && id !== "") {
             editHandler();
         }

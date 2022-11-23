@@ -10,7 +10,6 @@ const ListaFamosos = ({ getIdFamosos }) => {
 
     const getFamosos = async () => {
         const data = await FamososServices.getAllFamosos();
-        console.log(data.docs);
         setFamosos(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
 

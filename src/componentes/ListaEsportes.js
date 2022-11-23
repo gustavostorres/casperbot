@@ -10,7 +10,6 @@ const ListaEsportes = ({ getIdEsportes }) => {
 
     const getEsportes = async () => {
         const data = await EsportesServices.getAllEsportes();
-        console.log(data.docs);
         setEsportes(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
 

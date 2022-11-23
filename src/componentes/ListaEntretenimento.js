@@ -10,7 +10,6 @@ const ListaEntretenimento = ({ getIdEntretenimento }) => {
 
     const getNoticias = async () => {
         const data = await EntretenimentoServices.getAllEntretenimento();
-        console.log(data.docs);
         setNoticias(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
 

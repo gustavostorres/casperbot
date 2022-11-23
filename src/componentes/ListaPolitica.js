@@ -10,7 +10,6 @@ const ListaPolitica = ({ getIdPolitica }) => {
 
     const getPolitica = async () => {
         const data = await PoliticaServices.getAllPolitica();
-        console.log(data.docs);
         setPolitica(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
 

@@ -46,7 +46,6 @@ const Politica = ({ id, setIdPolitica }) => {
     const editHandler = async () => {
         try {
             const docSnap = await PoliticaServices.getPolitica(id);
-            console.log("the record is :", docSnap.data());
             setTitle(docSnap.data().title);
             setSubtitle(docSnap.data().subtitle);
             setButtonTitle(docSnap.data().buttonTitle);
@@ -58,7 +57,6 @@ const Politica = ({ id, setIdPolitica }) => {
     };
 
     useEffect(() => {
-        console.log("ID: ", id);
         if (id !== undefined && id !== "") {
             editHandler();
         }
