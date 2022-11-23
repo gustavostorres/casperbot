@@ -17,11 +17,15 @@ const ListaPolitica = ({ getIdPolitica }) => {
     const deleteHandler = async (id) => {
         await PoliticaServices.deletePolitica(id);
         getPolitica();
-        window.location.reload(false);
     };
 
     return (
         <>
+            <div>
+                <button onClick={getPolitica}>
+                    Refresh notícias
+                </button>
+            </div>
             <table>
                 <tr>
                     <th>#</th>

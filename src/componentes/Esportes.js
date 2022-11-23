@@ -41,7 +41,6 @@ const Esportes = ({ id, setIdEsportes }) => {
         setButtonTitle("");
         setButtonUrl("");
         setImageUrl("");
-        window.location.reload(false);
     }
 
     const editHandler = async () => {

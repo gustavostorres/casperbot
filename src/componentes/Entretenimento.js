@@ -41,7 +41,6 @@ const Entretenimento = ({ id, setIdEntretenimento }) => {
         setButtonTitle("");
         setButtonUrl("");
         setImageUrl("");
-        window.location.reload(false);
     }
 
     const editHandler = async () => {

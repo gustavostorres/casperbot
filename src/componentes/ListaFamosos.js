@@ -17,11 +17,15 @@ const ListaFamosos = ({ getIdFamosos }) => {
     const deleteHandler = async (id) => {
         await FamososServices.deleteFamosos(id);
         getFamosos();
-        window.location.reload(false);
     };
 
     return (
         <>
+            <div>
+                <button onClick={getFamosos}>
+                    Refresh notícias
+                </button>
+            </div>
             <table>
                 <tr>
                     <th>#</th>

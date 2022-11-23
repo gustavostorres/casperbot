@@ -41,7 +41,6 @@ const Famosos = ({ id, setIdFamosos }) => {
         setButtonTitle("");
         setButtonUrl("");
         setImageUrl("");
-        window.location.reload(false);
     }
 
     const editHandler = async () => {

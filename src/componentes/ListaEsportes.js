@@ -17,11 +17,15 @@ const ListaEsportes = ({ getIdEsportes }) => {
     const deleteHandler = async (id) => {
         await EsportesServices.deleteEsportes(id);
         getEsportes();
-        window.location.reload(false);
     };
 
     return (
         <>
+            <div>
+                <button onClick={getEsportes}>
+                    Refresh notícias
+                </button>
+            </div>
             <table>
                 <tr>
                     <th>#</th>

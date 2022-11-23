@@ -17,11 +17,15 @@ const ListaEntretenimento = ({ getIdEntretenimento }) => {
     const deleteHandler = async (id) => {
         await EntretenimentoServices.deleteEntretenimento(id);
         getNoticias();
-        window.location.reload(false);
     };
 
     return (
         <>
+            <div>
+                <button onClick={getNoticias}>
+                    Refresh notícias
+                </button>
+            </div>
             <table>
                 <tr>
                     <th>#</th>

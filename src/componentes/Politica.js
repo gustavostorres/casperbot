@@ -41,7 +41,6 @@ const Politica = ({ id, setIdPolitica }) => {
         setButtonTitle("");
         setButtonUrl("");
         setImageUrl("");
-        window.location.reload(false);
     }
 
     const editHandler = async () => {
